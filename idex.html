@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG books</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"
+  />
+  <link
+  rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <div class="container">
+            <h1 class="Titulo">Mangá
+               books</h1>
+        </div>
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao" />
+            <label for="menu">
+                <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+              </label>
+
+              
+              <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                      <a href="#" class="lista-menu__link">Descobrir</a>
+                    </li>
+                    <li class="lista-menu__item">
+                      <a href="#" class="lista-menu__link">catálogo</a>
+                    </li>
+                    <li class="lista-menu__item">
+                      <a href="#" class="lista-menu__link">loja</a>
+                    </li>
+                    <li class="lista-menu__item">
+                      <a href="#" class="lista-menu__link">avatar</a>
+                    </li>
+                    <li class="lista-menu__item">
+                      <a href="#" class="lista-menu__link">robux</a>
+                    </li>
+              </ul>
+
+            <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+            <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+        </div>
+    </header>
+    <section class="banner">
+      <h2 class="banner__titulo">Não sabe oque ler ?</h2>
+      <p class="banner__texto">
+        Navegue pelos mangas mais lidos da nossa plataforma
+      </p>
+      <input
+        type="search"
+        class="banner__pesquisa"
+        placeholder="Pesquisar"
+      />
+    </section>
+    <section class="carrossel">
+    
+      <h2 class="carrossel__titulo">mangas mais lidos</h2>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+  
+      <div class="swiper-slide">
+        <img
+          src="Img reais/711RqaljbIL.jpg"
+          alt="Livro sobre apache kafka e spring boot da alura books"
+        width="800" height="750"/>
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="Img reais/201963_520x520.jpg"
+          alt="Livro sobre liderança em design design da alura books" width="800" height="750"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img
+          src="Img reais/81kHWcb7n4L._AC_UF1000,1000_QL80_.jpg"
+          alt="Livro sobre javascript assertivo da alura books" width="800" height="750"
+        />
+      </div>
+      <div class="swiper-slide">
+        <img src="Img reais/81Z85oL1xvL._AC_UF894,1000_QL80_.jpg"alt="Livro Guia front end" width="800" height="750" />
+      </div>
+      <div class="swiper-slide">
+        <img src="Img reais/captura-de-tela-2023-08-18-154452-9ccpc973xt.webp"alt="Livro sobre portugol" width="800" height="750" />
+      </div>
+      <div class="swiper-slide">
+        <img src="Img reais/images (3).jpeg" alt="livro sobre acessibilidade" width="800" height="750" />
+      </div>
+    </div>
+    
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+  });
+</script>
+<div class="card">
+<div class="card__descrição">
+  <div class="descrição">
+    <h3 class="descrição__titulo">Avaliação</h3>
+    <h2 class="descrição__titulo-livro">Bluelock</h2>
+    <p class="descrição__texto">
+      Eu li bluelock pela primeira vez e curti, não sabia que um manga de esporte poderia ser tão bom assim, vi que tambem tem adptado para anime, porem a segunda temporada disseram que a animação não esta tão boa, então irei ficar no manga mesmo, retorno quando terminar.
+    </p>
+  </div>
+  <img src="Img reais/images (1).jpeg" alt="Avaliação 5 estrelas">
+</div>
+
+<div class="card__botões">
+  <ul class="botões">
+    <li class="botões__item">
+      <img src="img/Favoritos.svg" alt="Favoritar livro" />
+    </li>
+    <li class="botões__item">
+      <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+    </li>
+  </ul>
+  <a href="#" class="botões__ancora">Veja mais</a>
+</div>
+</div>
+</section>
+
+  <div class="card">
+  
+    <div class="card__descrição">
+      
+      <div class="Img reais/images (1).jpeg">
+        <h3 class="descrição__titulo">Avaliação</h3>
+        <h2 class="descrição__titulo-livro">Demon Slayer</h2>
+        <p class="descrição__texto">Sinceramente... a historia é muito boa, trás muitos ensinamentos, coisas que podemos levar para vida, além da ação do manga, as lutas, os personagens, até mesmo os vilões, no final entedemos ambas as partes, não vejo hora de lançar mais na adptação do anime, que tambem é muito bom inclusive
+        </p>
+      </div>
+      <img class= Usuário src="Img reais/images (2).jpeg">
+    </div>
+
+    
+    
+    <div class="card__botões">
+      
+      <ul class="botões">
+        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+      </ul>
+      
+      <a href="#" class="botões__ancora">Saiba mais</a>
+    </div>
+  </div>
+
+
+
+</section>
+
+
+<section class="tópicos">
+  <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+  <ul class="tópicos__lista">
+    <li class="tópicos__item"><a href="#" class="tópicos__link">Ação</a></li>
+    <li class="tópicos__item">
+      <a href="#" class="tópicos__link">Exploração</a>
+    </li>
+    <li class="tópicos__item">
+      <a href="#" class="tópicos__link">Parkour</a>
+    </li>
+    <li class="tópicos__item">
+      <a href="#" class="tópicos__link">Terror</a>
+    </li>
+    <li class="tópicos__item">
+      <a href="#" class="tópicos__link">RPG</a>
+    </li>
+    <li class="tópicos__item">
+      <a href="#" class="tópicos__link">MMORPG</a>
+    </li>
+    <li class="tópicos__item">
+      <a href="#" class="tópicos__link">Simulator</a>
+    </li>
+    <li class="tópicos__item">
+      <a href="#" class="tópicos__link">Battlegrounds</a>
+    </li>
+  </ul>
+</section>
+
+
+
+</body>
+
+</html>
